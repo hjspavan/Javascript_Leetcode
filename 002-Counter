@@ -1,13 +1,10 @@
-const makeCounter = () =>{
-    let count = 0;
+const createCounter = (n) => {
+    let count = n;
 
-    return () =>{
-        count++;
-        console.log(count);
-    }
-}
+    return () => count++;
+};
 
-let count = makeCounter();
-couter();
-couter();
-couter();
+let counter = createCounter();
+counter();
+counter();
+counter();
